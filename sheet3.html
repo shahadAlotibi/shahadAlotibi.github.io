@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> CV Form </title>
+</head>
+    
+
+<body>
+    <h1 style="color:black;
+    font-size:250%; text-align:center; background-color:rgb(146, 178, 182);"> CV FORM </h1>
+<fieldset> 
+   <legend><p>Personal Information</p></legend>
+    <label for="fname"><strong>Name:</strong></label><br>
+    <input type="text" id="fname" name="fname"><br>
+            
+    <p>Gender:
+    <input type="radio" id="Male" name="Gender" value="Male">
+    <label for="Male">Male</label>
+    <input type="radio" id="Female" name="Gender" value="Female">
+    <label for="Female">Female</label></p>
+          
+    <label for="phone">Enter a phone number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="555-55-555" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+    <small>Format:555-55-555</small><br><br>
+
+    <label for="link">Your linkedin page:</label>
+    <input type="link" id="link" name="link">
+    <label for="Eml">EMAIL:</label>
+    <input type="email" id="Eml" name="Eml">
+</fieldset>
+
+<br>
+  <label for="experience">Years of experience (between 3 and 10):</label>
+  <input type="number" id="experience" name="experience" min="3" max="10"><br>
+<br>
+
+  <label for="salary">Expected Salary: 4000
+  <input type="range" id="salary" name="salary" min="4000" max="10000"> 10000</label><br><br>
+
+  <label for="Language">Language:</label><br>
+  <input type="checkbox" id="Arabic" name="Arabic" value="Arabic">
+  <label for="Arabic">Arabic</label><br>
+  <input type="checkbox" id="Eng" name="Eng" value="English">
+  <label for="Eng">English</label><br><br>
+
+  <label for="Sfile">Uplaod your CV :</label>
+  <input type="file" id="Sfile" name="Sfile"><br><br>
+
+  <label for="week">The nearest week you can start work</label>
+  <input type="week" id="week" name="week"><br><br>
+
+  <label for="month">The nearest month you can start work</label>
+  <input type="month" id="month" name="month"><br><br>
+
+  <label for="time">The best time to work:</label>
+  <input type="time" id="time" name="time"><br><br>
+
+  <label for="Maj">Majors</label>
+  <input type="text" id="Maj" name="Maj"><br><br>
+
+  <label for="text">Why you want to work with us</label><br>
+  <input type="text" id="text" name="text"><br><br>
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+
+
+
+
+</body>
+</html>
