@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greetings</title>
+    <script>
+function calculateBMI(weight, height) {
+  var bmi = weight / (height * height);
+  var category;
+
+  if (bmi < 18.5) {
+    category = "Underweight";
+  } else if (bmi >= 18.5 && bmi < 25) {
+    category = "Normal weight";
+  } else if (bmi >= 25 && bmi < 30) {
+    category = "Overweight";
+  } else {
+    category = "Obese";
+  }
+
+  return category;
+}
+
+var weight = 70; // replace with actual weight in kilograms
+var height = 1.75; // replace with actual height in meters
+
+var bmiCategory = calculateBMI(weight, height);
+console.log("Weight category: " + bmiCategory);
+</script>
+</head>
+</html>
